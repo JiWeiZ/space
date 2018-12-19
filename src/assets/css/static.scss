@@ -1,0 +1,46 @@
+$successColor: #52BA1F;
+$successBgColor: #F0F9EB;
+$infoColor: #333;
+$infoBgColor: #EDF2FC;
+$warnColor: #B97816;
+$warnBgColor: #FDF6EC;
+$errorColor: #EA2000;
+$errorBgColor: #FEF0F0;
+$mainColorL1: #D0E8F8;
+$mainColorL2: #ADDAF9;
+$mainColorL3: #57B9FA;
+$mainColorL4: #2FA0F0;
+$mainColorL5: #2790DA;
+
+@mixin maskLayer {
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background: rgba(0,0,0,0.3);
+  color:#000;
+}
+
+@mixin maskInnerBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 5px #333;
+  border-radius: 5px;
+  background: #fff;
+}
+
+@mixin boxClose {
+  position: absolute;
+  font-size: 20px;
+  color: #2fa0f0;
+  cursor: pointer;
+  padding: 5px;
+  &:hover i {
+    transform-origin: center;
+    transform: scale(1.2, 1.2)
+  }
+}

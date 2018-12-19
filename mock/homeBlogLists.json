@@ -1,0 +1,8 @@
+{
+  "status":"0",
+  "msg":"",
+  "result":[
+    {"title":"最新博文","blogListLink":"api/blogs"},
+    {"title":"热门博文","blogListLink":"api/blogs"}
+  ]
+}
